@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMY-t6-NE9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="409"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lg-4J-AqA">
+                                <rect key="frame" x="0.0" y="474" width="103.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="W1B-5t-HvH"/>
+                                </constraints>
+                                <state key="normal" title="UIWebView"/>
+                                <connections>
+                                    <action selector="selectUIWebviewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEj-Zc-JHl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HG-YJ-JVD">
+                                <rect key="frame" x="103.5" y="474" width="103.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="X57-30-d1z"/>
+                                </constraints>
+                                <state key="normal" title="WKWebView"/>
+                                <connections>
+                                    <action selector="selectWKWebViewAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zjp-WQ-OsZ"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OMa-ko-k5T">
+                                <rect key="frame" x="206" y="454" width="208" height="408"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="GZl-Ya-TQw"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0l0-Wf-wnN"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. choice view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iS2-67-3Dp">
+                                <rect key="frame" x="0.0" y="453" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUB-jS-9RF">
+                                <rect key="frame" x="0.0" y="565" width="103.5" height="44"/>
+                                <state key="normal" title="Do Now"/>
+                                <connections>
+                                    <action selector="doSnapshotNowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMD-T6-B10"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Do Snapshot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7h-4L-dsj">
+                                <rect key="frame" x="0.0" y="544" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7R-q4-HKB">
+                                <rect key="frame" x="103.5" y="575" width="103.5" height="57.5"/>
+                                <string key="text">Minimize App to do snapshot in background
+automatically</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OMY-t6-NE9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0bJ-xv-cnx"/>
+                            <constraint firstItem="iS2-67-3Dp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4UI-e8-cWg"/>
+                            <constraint firstItem="4lg-4J-AqA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6jT-UP-NjZ"/>
+                            <constraint firstItem="OMa-ko-k5T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7aS-qb-fqA"/>
+                            <constraint firstItem="5HG-YJ-JVD" firstAttribute="height" secondItem="4lg-4J-AqA" secondAttribute="height" id="8aX-qJ-E3P"/>
+                            <constraint firstItem="OMa-ko-k5T" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="M6O-ni-yvw"/>
+                            <constraint firstItem="pUB-jS-9RF" firstAttribute="top" secondItem="m7h-4L-dsj" secondAttribute="bottom" id="NAg-lO-1qc"/>
+                            <constraint firstItem="OMY-t6-NE9" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="QR6-oY-J3p"/>
+                            <constraint firstItem="z7R-q4-HKB" firstAttribute="top" secondItem="m7h-4L-dsj" secondAttribute="bottom" constant="10" id="SDU-vH-f9P"/>
+                            <constraint firstItem="OMY-t6-NE9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WFm-HO-bQN"/>
+                            <constraint firstItem="iS2-67-3Dp" firstAttribute="width" secondItem="OMY-t6-NE9" secondAttribute="width" multiplier="0.5" id="Wx8-Fb-o2N"/>
+                            <constraint firstItem="z7R-q4-HKB" firstAttribute="leading" secondItem="pUB-jS-9RF" secondAttribute="trailing" id="ZbZ-hZ-sr7"/>
+                            <constraint firstItem="z7R-q4-HKB" firstAttribute="width" secondItem="pUB-jS-9RF" secondAttribute="width" id="aDO-WS-hiv"/>
+                            <constraint firstItem="OMa-ko-k5T" firstAttribute="top" secondItem="OMY-t6-NE9" secondAttribute="bottom" id="c0z-4A-q3w"/>
+                            <constraint firstItem="5HG-YJ-JVD" firstAttribute="leading" secondItem="4lg-4J-AqA" secondAttribute="trailing" id="dxW-S0-8Uv"/>
+                            <constraint firstItem="m7h-4L-dsj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hAV-Zl-6Jz"/>
+                            <constraint firstItem="m7h-4L-dsj" firstAttribute="width" secondItem="iS2-67-3Dp" secondAttribute="width" id="jW8-pp-kix"/>
+                            <constraint firstItem="4lg-4J-AqA" firstAttribute="width" secondItem="OMY-t6-NE9" secondAttribute="width" multiplier="0.25" id="jqV-aD-cQH"/>
+                            <constraint firstItem="pUB-jS-9RF" firstAttribute="height" secondItem="4lg-4J-AqA" secondAttribute="height" id="kVk-gF-h6i"/>
+                            <constraint firstItem="pUB-jS-9RF" firstAttribute="width" secondItem="4lg-4J-AqA" secondAttribute="width" id="ofc-1P-FJ4"/>
+                            <constraint firstItem="5HG-YJ-JVD" firstAttribute="top" secondItem="iS2-67-3Dp" secondAttribute="bottom" id="p1F-D7-QmV"/>
+                            <constraint firstItem="OMa-ko-k5T" firstAttribute="width" secondItem="OMY-t6-NE9" secondAttribute="width" multiplier="0.5" id="qwp-JE-tlL"/>
+                            <constraint firstItem="5HG-YJ-JVD" firstAttribute="width" secondItem="4lg-4J-AqA" secondAttribute="width" id="s2c-7I-SUF"/>
+                            <constraint firstItem="OMY-t6-NE9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sSR-Cj-CpO"/>
+                            <constraint firstItem="pUB-jS-9RF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uod-Y4-rL2"/>
+                            <constraint firstItem="4lg-4J-AqA" firstAttribute="top" secondItem="iS2-67-3Dp" secondAttribute="bottom" id="w6l-Vn-XVF"/>
+                            <constraint firstItem="iS2-67-3Dp" firstAttribute="top" secondItem="OMY-t6-NE9" secondAttribute="bottom" id="x2p-Qb-n5E"/>
+                            <constraint firstItem="m7h-4L-dsj" firstAttribute="top" secondItem="5HG-YJ-JVD" secondAttribute="bottom" constant="26" id="xFh-YG-MBo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrrenshotsScrollView" destination="OMa-ko-k5T" id="vWc-k8-PfG"/>
+                        <outlet property="webviewContainerView" destination="OMY-t6-NE9" id="pPr-mo-OhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
