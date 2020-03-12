@@ -137,6 +137,9 @@
         __block void(^blockCompletionHandler)(UIImage *image) = completionHandler;
         
         WKSnapshotConfiguration *configuration = [WKSnapshotConfiguration new];
+        if (@available(iOS 13.0, *)) {
+            configuration.afterScreenUpdates = NO;
+        }
         configuration.rect = CGRectMake(-webViewOffset.x, -webViewOffset.y, screenshotRect.size.width, screenshotRect.size.height);
         [self.wkwebView takeSnapshotWithConfiguration:configuration completionHandler:^(UIImage * _Nullable snapshotImage, NSError * _Nullable error) {
             NSLog(@"wkwebView takeSnapshotWithConfiguration. Error = %@", error);
