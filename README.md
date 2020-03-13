@@ -8,7 +8,4 @@ Powered by PhotoLink ( https://apps.apple.com/app/id1046238794 )
 |iOS Version|UIWebView-Foreground|UIWebView-Background|WKWebView-Foreground|WKWebView-Background|
 |---|---|---|---|---|
 |iOS 12|+|+|+|+|
-|iOS 13|+|+|+|-|
-|iOS 13.1|+|+|+|+|
-|iOS 13.2|+|+|+|+|
-|iOS 13.3|+|+|+|+|
+|iOS 13|+|+|+|+|
