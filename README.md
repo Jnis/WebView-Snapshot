@@ -1,5 +1,7 @@
 # WebView-Snapshot
-WKWebView and UIWebView snapshot completely
+WKWebView and UIWebView snapshot completely.
+
+Powered by PhotoLink ( https://apps.apple.com/app/id1046238794 )
 
 #Tests
 
